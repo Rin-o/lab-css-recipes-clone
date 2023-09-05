@@ -9,16 +9,91 @@ html {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
+  line-height: 1.5;
+  color: #474747;
+  font-size: 1.5em;
+
 }
 
 /*  Set the font */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Verdana', sans-serif;
 }
 
 /* STYLES */
 /* Write your CSS below */
+
+header {
+    background-image: url('../images/apple-pie.jpg');
+    background-position: 0 0;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    padding: 150px;
+    position: relative;
+    margin-top: 20px;
+  }
+
+h1 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 7em;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.description h2 {
+  font-size: 2em;
+  text-align: left;
+  color: #474747;
+font-weight: 100;
+  padding: 0px 150px;
+  margin-top: 30px;
+  line-height: 48px;
+}
+
+.ingredients img {
+  text-align: center;
+}
+
+.ingredients {
+  font-weight: lighter;
+  padding: 20px 150px;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.subTitle {
+
+  padding-bottom: 0px 30%;
+}
+hr {
+  margin: 20px auto 20px auto;
+  width: 90%;
+}
+
+.directions {  font-weight: lighter;
+  padding: 50px 150px;
+}
+
+ul li {
+  list-style-type: '- ';
+}
+
+ol li {
+  list-style: none;
+  counter-increment: unordered-list-item;
+}
+
+ol li:before {
+  content: counter(unordered-list-item) ')';
+}
+
